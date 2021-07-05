@@ -1,0 +1,12 @@
+{
+  "type": "service_account",
+  "project_id": "kaggle-sql-practice",
+  "private_key_id": "e38280dcd9ab3e03b1bd2c8ea7cef8b01ae9a829",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQCrNyLC/vmc0yB7\ne6bwF2CwPWTJ2dNpmD1yqQLyL77b/it/SSEovx52G+iQFL0whzrNaPvrmt4k/UyS\nXXtc+6Eo0SlLyhxBbCNlq20WG4G38wTsxt8caX6ud5sNGrW37yacif0Aa/x+2nq4\nf2XKgTPEfmkWjTP5nA96VP/cv/JIYH+yEKjQzRZmX0mJKOVqU+5C3KJ2dY3r97Kh\ndgF/tiGJ5mgprpuhv/smz8t3rLeRMjczq1Elht7xYxfgIBeCz7EN1eHztfHZO2xU\nP9PCcVDYzWum5BuHhbBWt52K19X6B5CoGfOnOqmyyG3mPWF6xXRU6OokLJkzIs7c\n5nb5tee1AgMBAAECggEAA6qkmvwA+bcafI3a7NM6E2BWd3rhjYSdNzXPJ3/1NC74\n8PeCy2+kwp5UfWPvQUNRlUPotkBRai43HhoKL29C0Mr01/fRA0zPwkyt1DWU6DVZ\n49v8UAWpfgEZFKBXLIeiC4VqPOJJBrZsvspPAzdJvk7C7PGoH5pQ6vWj4HJzBbdr\nmOmcAhWiFADVMF1pfg66mwQpHhIEANAoO3bCnlMRzclY6tEv6KsIS75UQFfxbbnT\n7+aYSnzFoQWob1DMVVzcOTC6e5LjMBNGuvv+Zs1bI0XCGtV/0M0D9AMt63K3i2pD\nSyCX8hopBTQ0ZFDT+7+4A5O2tOhkwAhcvK1wMjDpqQKBgQDfsF2LMO9YgwEhdnoq\ntiXn2vel+YdN4xMR8p5+Vcwa1K/p1goLQUnRA/CJIXHcmihmKrxeDD2bUNLJ3FaS\nFsrbWB/wIqV7MULqkAL1QwXxur/mzGGRkiPaz6RcPUyGmbzlTXeXrMOrQ3IoWI1i\nC+qIF+fMtuShDuX90A5/U8Lr5wKBgQDD8mNSyfE4QvRWIK9tZ0em5Ds/tIVEh7PD\nhi+qev9B+im7LnOfuaYf1m+quOxd7yrYYW1oSwhiO19xTO1k4t0C/phNFDouf3gU\n3xn/dEUO787nkgYFP2brSUrt/iY2FY9knZGJM/hangBJ85K4V/cEmQY6ZvmFXDIx\nV8oeO2U8AwKBgQCgJ/th7GCCBBIsLlLb/9x1+/4yNM2eg4Wk5Qx7sdxYHY3yI5C/\nbDh40ZRH6s1GQI3KULDbuXHmoWC6rOrC4FTP5XHAkl3fLW8W2JN1nU5FPAuoKQ92\nlabcRK0Oack/2hU4LFYDH+xc1AaJQpW/7H44gL0zgoOBmVQsfOnUWlmGYwKBgBf2\nudzzI5Qc5CLwZmP74JBxkylsW2wRKJP+AjBYUIVyIc5plOxw2PdF02xOp2GpkVTb\nPXUm0ASrfDWwEcxnzl3CYz/x/FeZcUckLdrHDncQLv61JhVYNq8JzKckkOnGYz4L\n4zOjbnkun5xrtILlBynByTg1RcjgiKbuNKLT4sKfAoGAQ5ygLyFv3fohp3rRuHr9\niHS/uwpXFpdkeGPZclXRaKWUQmX9DkwXjV/ZDBbfLrq04OekJJdHq3LMptqkV05n\nsUnBWUoim1bbF2m+5r85iN/PZO51CaXU9on853LNuBdXJ3IUnyk9hbOixUfpplFt\nCZiqxuZ64mHLpyeBuJB0Utg=\n-----END PRIVATE KEY-----\n",
+  "client_email": "neha-data-science@kaggle-sql-practice.iam.gserviceaccount.com",
+  "client_id": "105165427468884049557",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/neha-data-science%40kaggle-sql-practice.iam.gserviceaccount.com"
+}
