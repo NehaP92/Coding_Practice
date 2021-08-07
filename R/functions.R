@@ -1,8 +1,4 @@
-quit()
 sum(2,2)
 base::sum(2,2)
-lsf("package:base")
 ls("package:base")
-dplyr::if_else()
 dplyr::if_else
-quit()
