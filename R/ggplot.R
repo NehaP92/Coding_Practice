@@ -130,3 +130,47 @@ pop_by_country %>%
          | `Country Name`=="Afghanistan" ) %>%
   ggplot(aes(x=Year,y=Value,fill=`Country Name`))+
   geom_bar(stat="identity")
+
+
+
+pop_by_country %>%
+  filter(`Country Name`=="Arab World" | `Country Name`=="Euro area"
+         | `Country Name`=="Afghanistan" ) %>%
+  mutate(decade=Year-Year%%10)
+
+
+pop_by_country %>%
+  filter(`Country Name`=="Arab World" | `Country Name`=="Euro area"
+         | `Country Name`=="Afghanistan" ) %>%
+  mutate(decade=Year-Year%%10) %>%
+  ggplot(aes(x=decade,y=Value,fill=`Country Name`))+
+  geom_bar(stat="identity")
+
+
+
+pop_by_country %>%
+  filter(`Country Name`=="Arab World" | `Country Name`=="Euro area"
+         | `Country Name`=="Afghanistan" ) %>%
+  mutate(decade=Year-Year%%10) %>%
+  group_by(`Country Name`,decade)
+
+
+
+pop_by_country %>%
+  filter(`Country Name`=="Arab World" | `Country Name`=="Euro area"
+         | `Country Name`=="Afghanistan" ) %>%
+  mutate(decade=Year-Year%%10) %>%
+  group_by(`Country Name`,decade)%>%
+  ggplot(aes(x=decade,y=Value,fill=`Country Name`))+
+  geom_bar(stat="identity")
+
+
+
+
+pop_by_country %>%
+  filter(`Country Name`=="Arab World" | `Country Name`=="Euro area"
+         | `Country Name`=="Afghanistan" ) %>%
+  ggplot(aes(x=Year,y=Value,color=`Country Name`)) +
+  geom_point() + geom_smooth(method=lm) +
+  scale_color_manual(values=c('#30D5C8','#008080','#000080')) +
+  theme(legend.position='bottom')
