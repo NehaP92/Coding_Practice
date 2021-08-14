@@ -101,3 +101,8 @@ library(tidyverse)
 library(dplyr)
 
 population <- read_csv("population.csv")
+population
+
+population %>%
+  group_by(`Country Name`)
+
