@@ -85,3 +85,19 @@ tips %>%
   labs(title="Number of Patrons by Day and Meal",
        subtitle = "Position by Smoker",
        x="Day",y="Count")
+
+
+
+
+
+
+
+
+
+
+
+
+library(tidyverse)
+library(dplyr)
+
+population <- read_csv("population.csv")
