@@ -106,3 +106,27 @@ population
 population %>%
   group_by(`Country Name`)
 
+population %>%
+  select(`Country Name`, Year, Value)
+
+pop_by_country <- population %>%
+                    select(`Country Name`, Year, Value)
+pop_by_country
+
+
+pop_by_country %>%
+  filter(`Country Name`=="Arab World" | `Country Name`=="Euro area"
+         | `Country Name`=="Afghanistan" )
+
+pop_by_country %>%
+  filter(`Country Name`=="Arab World" | `Country Name`=="Euro area"
+         | `Country Name`=="Afghanistan" ) %>%
+  ggplot(aes(x=Year,y=Value,color=`Country Name`))+geom_line()
+
+
+
+pop_by_country %>%
+  filter(`Country Name`=="Arab World" | `Country Name`=="Euro area"
+         | `Country Name`=="Afghanistan" ) %>%
+  ggplot(aes(x=Year,y=Value,fill=`Country Name`))+
+  geom_bar(stat="identity")
