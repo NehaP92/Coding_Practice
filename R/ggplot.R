@@ -121,7 +121,8 @@ pop_by_country %>%
 pop_by_country %>%
   filter(`Country Name`=="Arab World" | `Country Name`=="Euro area"
          | `Country Name`=="Afghanistan" ) %>%
-  ggplot(aes(x=Year,y=Value,color=`Country Name`))+geom_line()
+  ggplot(aes(x=Year,y=Value,color=`Country Name`))+geom_line() +
+  labs(title="Population per Country", x="Year",y="Population")
 
 
 
@@ -129,7 +130,8 @@ pop_by_country %>%
   filter(`Country Name`=="Arab World" | `Country Name`=="Euro area"
          | `Country Name`=="Afghanistan" ) %>%
   ggplot(aes(x=Year,y=Value,fill=`Country Name`))+
-  geom_bar(stat="identity")
+  geom_bar(stat="identity") +
+  labs(title="Population per Country", x="Year",y="Population")
 
 
 
@@ -144,7 +146,8 @@ pop_by_country %>%
          | `Country Name`=="Afghanistan" ) %>%
   mutate(decade=Year-Year%%10) %>%
   ggplot(aes(x=decade,y=Value,fill=`Country Name`))+
-  geom_bar(stat="identity")
+  geom_bar(stat="identity") +
+  labs(title="Population per Country", x="Decade",y="Population")
 
 
 
@@ -171,6 +174,62 @@ pop_by_country %>%
   filter(`Country Name`=="Arab World" | `Country Name`=="Euro area"
          | `Country Name`=="Afghanistan" ) %>%
   ggplot(aes(x=Year,y=Value,color=`Country Name`)) +
+  geom_point() +
+  labs(title="Population per Country", x="Decade",y="Population")
+
+
+
+pop_by_country %>%
+  filter(`Country Name`=="Arab World" | `Country Name`=="Euro area"
+         | `Country Name`=="Afghanistan" ) %>%
+  ggplot(aes(x=Year,y=Value,color=`Country Name`)) +
+  geom_point() + geom_smooth(method=lm) +
+  labs(title="Population per Country", x="Decade",y="Population")
+
+
+
+pop_by_country %>%
+  filter(`Country Name`=="Arab World" | `Country Name`=="Euro area"
+         | `Country Name`=="Afghanistan" ) %>%
+  ggplot(aes(x=Year,y=Value,color=`Country Name`)) +
   geom_point() + geom_smooth(method=lm) +
   scale_color_manual(values=c('#30D5C8','#008080','#000080')) +
-  theme(legend.position='bottom')
+  theme(legend.position='bottom') +
+  labs(title="Population per Country", x="Decade",y="Population")
+
+
+
+ggplot(pop_by_country, aes(x=`Value`)) + geom_density()
+
+ggplot(pop_by_country,aes(x=`Country Name`)) +
+  geom_histogram(stat ="count")
+
+pop_by_country %>%
+  filter(`Country Name`=="Arab World" | `Country Name`=="Euro area"
+         | `Country Name`=="Afghanistan" ) %>%
+  ggplot(aes(x=`Country Name`)) +
+  geom_histogram(stat ="count") +
+  labs(title="Number of observations per Country")
+
+
+
+ggplot(pop_by_country, aes(x=`Value`)) + geom_density() +
+  labs(title="Population Distribultion")
+
+
+
+pop_by_country %>%
+  filter(`Country Name`=="Arab World" | `Country Name`=="Euro area"
+         | `Country Name`=="Afghanistan" ) %>%
+  ggplot(aes(x=`Country Name`,y=Value)) +
+  geom_boxplot(notch=TRUE)
+
+
+pop_by_country %>%
+  filter(`Country Name`=="Arab World" | `Country Name`=="Euro area"
+         | `Country Name`=="Afghanistan" ) %>%
+  ggplot(aes(x=`Country Name`,y=Value, fill = `Country Name`)) +
+  geom_boxplot(outlier.colour="red", outlier.shape=8,
+               outlier.size=4) + scale_fill_brewer(palette="Dark2")
+
+
